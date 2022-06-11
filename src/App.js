@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  function exception1() {
+    throw "exception1";
+  }
+
+  function exception2() {
+    throw "exception2";
+  }
+
+  function exception3() {
+    throw "exception3";
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={exception1}>crash - Exception1</button>
+      <button onClick={exception2}>crash - Exception2</button>
+      <button onClick={exception3}>crash - Exception3</button>
     </div>
   );
 }
